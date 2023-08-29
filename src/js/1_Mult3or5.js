@@ -29,11 +29,11 @@ const ans_3_desc = "Create an empty array. Loop through multiples of 3 until 3 m
 
 const ans_4 = n => {
     const multiples = [];
-    const max_three = Math.floor(n / 3);
+    const max_three = Math.floor(n / 3) + 1;
     for (let i = 1; i < max_three; ++i)
         multiples.push(i * 3)
 
-    const max_five = Math.floor(n / 5) - (!(n % 5) ? 1 : 0);
+    const max_five = Math.floor(n / 5);
     for (let i = 1; i < max_five; i++) {
         if (!(i % 3))
             continue;
@@ -48,7 +48,7 @@ const ans_5 = (n, i = 1, arr = []) => {
         return arr;
     if (i * 5 < n)
         arr.push(i * 5);
-    if (i * 3 < n && !(i % 5))
+    if (i * 3 < n && i % 5 != 0)
         arr.push(i * 3);
     return ans_5(n, ++i, arr);
 }
