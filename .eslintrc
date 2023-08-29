@@ -10,7 +10,7 @@
         "node": true
     },
     "rules": {
-        "semi": 1,
+        "semi": "off",
         "indent": [ "warn", 4 ],
         "no-console": "off",
         "no-unused-var": "off"

@@ -7,8 +7,7 @@
     "build": "webpack --mode=development",
     "start": "npm run build && webpack serve --mode=development",
     "lint": "eslint src --ext .js --fix",
-    "test": "jest --coverage",
-    "tsc": "tsc"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
