@@ -17,7 +17,7 @@ View on [Github Pages](https://smkou.github.io/project-euler-solutions/)
 
 ## **Description**
 
-Project Euler Solutions is an ongoing project to produce solutions to project euler archive problems. For every problem, I try to come up with as many solutions as I can and will even return to old problems.
+Project Euler Solutions is an ongoing project to produce solutions to project euler archive problems. For every problem, I try to come up with as many solutions as I can at the moment.
 
 ## **Complete Setup**
 
