@@ -4,10 +4,12 @@ import './css/styles.css';
 // Refer variables from .env => ${process.env.varName}
 import MultiplesOf3or5 from './js/1_MultiplesOf3or5';
 import EvenFibonacciNumbers from './js/2_EvenFibonacciNumbers';
+import LargestPrimeFactor from './js/3_LargestPrimeFactor';
 
 const euler_problems = new Map();
 euler_problems.set("MultiplesOf3or5", MultiplesOf3or5);
 euler_problems.set("EvenFibonacciNumbers", EvenFibonacciNumbers);
+euler_problems.set("LargestPrimeFactor", LargestPrimeFactor);
 
 const problems_select = document.getElementById('problems');
 const user_input = document.getElementById('user_input')
