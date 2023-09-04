@@ -2,12 +2,12 @@ import './css/fonts.css';
 import './css/styles.css';
 
 // Refer variables from .env => ${process.env.varName}
-import Mult3or5 from './js/1_Mult3or5';
-import EvenFibNum from './js/2_EvenFibNum';
+import MultiplesOf3or5 from './js/1_MultiplesOf3or5';
+import EvenFibonacciNumbers from './js/2_EvenFibonacciNumbers';
 
 const euler_problems = new Map();
-euler_problems.set("Mult3or5", Mult3or5);
-euler_problems.set("EvenFibNum", EvenFibNum);
+euler_problems.set("MultiplesOf3or5", MultiplesOf3or5);
+euler_problems.set("EvenFibonacciNumbers", EvenFibonacciNumbers);
 
 const problems_select = document.getElementById('problems');
 const user_input = document.getElementById('user_input')

@@ -54,7 +54,7 @@ const ans_5 = (n, i = 1, arr = []) => {
 }
 const ans_5_desc = "On first call, declare defaults: i = 1 and arr = []. On each iteration, check if both the index multiplied by 3 and multiplied by 5 are greater than or equal to n. Then, if the index multiplied by 5 is less than n, push the multiple into the array. If the index multiplied by 3 is less than n and not divisible by 5 as well, push the multiple into the array. Return this function with n, i incremented by 1, and the array."
 
-const Mult3or5 = {
+const MultiplesOf3or5 = {
     problem_name: "Multiples of 3 or 5",
     description: "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6, and 9. The sum of these multiples is 23.\nFind the sum of all multiples of 3 or 5 below 1000.",
     url: "https://projecteuler.net/problem=1",
@@ -73,4 +73,4 @@ const Mult3or5 = {
     }
 }
 
-export default Mult3or5;
+export default MultiplesOf3or5;
