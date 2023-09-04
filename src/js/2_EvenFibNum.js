@@ -67,7 +67,7 @@ const ans_4 = n => {
 }
 const ans_4_desc = "Populate an array with the fibonacci sequence up to n, then set sum to the result of reduce. On each value of the array, if the value is even, add it to the accumulator. Return the sum."
 
-const EvenFibonacciNum = {
+const EvenFibNum = {
     problem_name: "Even Fibonacci Numbers",
     description: "Each new term in the Fibonacci sequence is generated adding the previous two terms. By starting with 1 and 2, the first 10 terms will be:\n1,2,3,5,8,13,21,34,55,89...\nBy considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.",
     url: "https://projecteuler.net/problem=2",
@@ -86,4 +86,4 @@ const EvenFibonacciNum = {
     }
 }
 
-export default EvenFibonacciNum;
+export default EvenFibNum;

@@ -3,9 +3,11 @@ import './css/styles.css';
 
 // Refer variables from .env => ${process.env.varName}
 import Mult3or5 from './js/1_Mult3or5';
+import EvenFibNum from './js/2_EvenFibNum';
 
 const euler_problems = new Map();
 euler_problems.set("Mult3or5", Mult3or5);
+euler_problems.set("EvenFibNum", EvenFibNum);
 
 const problems_select = document.getElementById('problems');
 const user_input = document.getElementById('user_input')
