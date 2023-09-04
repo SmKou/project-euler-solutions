@@ -62,14 +62,14 @@ const MultiplesOf3or5 = {
     logic: [ans_1_desc, ans_2_desc, ans_3_desc, ans_4_desc, ans_5_desc],
     present: (result) => result.join(", "),
     default: 1000,
-    check_input_valid: (v) => {
+    check_input_valid: function(v) {
         try {
             const n = parseInt(v);
             if (n < 1)
-                return 1000;
-            return true;
+                return this.default;
+            return n;
         }
-        catch (err) { return 1000; }
+        catch (err) { return this.default }
     }
 }
 
