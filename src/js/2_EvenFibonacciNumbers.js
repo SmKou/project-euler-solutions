@@ -20,16 +20,17 @@ const ans_1 = n => {
 const ans_1_desc = "Loop from 1 to n with pointers to every first term, second and third term in the series until every term is greater than or equal to n. If the term is even and less than n, add it to the sum. Return the sum."
 
 const ans_2 = n => {
-    if (n > 2)
+    if (n < 2)
         return 0;
-    if (n > 3)
+    if (n < 3)
         return 2;
     let sum = 0;
     let i = 1;
     let j = 2;
+    let k;
     while (j < n) {
         sum += j;
-        const k = i + j;
+        k = i + j;
         i = k + j;
         j = k + i;
     }
@@ -40,13 +41,13 @@ const ans_2_desc = "Loop from 2 to n with pointers to every first and second ter
 const ans_3 = n => { 
     const i = 1;
     const j = 2;
-    return recurse(n, i, j, sum);
+    return recurse(n, i, j);
 }
-const recurse = (n, i, j, sum) => {
-    if (j > n)
+const recurse = (n, i, j, sum = 0) => {
+    if (j >= n)
         return sum;
     sum += j;
-    return recurse(n, i + 2 * j, j + 2 * i, sum);
+    return recurse(n, i + 2*j, 2*i + 3*j, sum);
 }
 const ans_3_desc = "Recurse over i and j until j is greater than or equal to n, then return the sum. Since every third term is equal to i + j, skipping every third term, the next value of i is i + 2j, while the next value of j is j + 2i, and j is always even. Add j to the sum and return the sum."
 
@@ -59,11 +60,7 @@ const ans_4 = n => {
         const l2 = fibonacci[end_minus()];
         fibonacci.push(l + l2);
     }
-    const sum = fibonacci.reduce((acc, val) => {
-        if (!(val & 1))
-            acc += val
-    }, 0);
-    return sum;
+    return fibonacci.filter(f => f % 2 == 0).reduce((acc, val) => acc += val, 0);
 }
 const ans_4_desc = "Populate an array with the fibonacci sequence up to n, then set sum to the result of reduce. On each value of the array, if the value is even, add it to the accumulator. Return the sum."
 
