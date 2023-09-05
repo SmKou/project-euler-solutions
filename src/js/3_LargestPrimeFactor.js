@@ -1,6 +1,17 @@
 /*
 Notes:
 Cannot use recursive method or even linear - too many iterations
+
+Big numbers:
+- Pollard's rho algorithm: http://en.wikipedia.org/wiki/Pollard%27s_rho_algorithm
+- Shanks' square forms factorization: https://en.wikipedia.org/wiki/Shanks%27_square_forms_factorization
+
+Less than 10**25: Lenstra elliptic curve factorization
+- http://en.wikipedia.org/wiki/Lenstra_elliptic_curve_factorization
+Less than 10**100: Quadratic sieve
+- http://en.wikipedia.org/wiki/Quadratic_sieve
+More than 10**100: General number field sieve
+- http://en.wikipedia.org/wiki/General_number_field_sieve
 */
 
 const ans_1 = n => {
